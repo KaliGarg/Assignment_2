@@ -1,0 +1,21 @@
+body{
+    background-image: linear-gradient(to left,rgba(80, 38, 158, 0.1),rgba(73, 133, 18, 0.2),rgba(126, 63, 15, 0.1)),url("image/1.jpg");
+}
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+    color: antiquewhite;
+}
+p{
+    font-size: 15px;
+    color: black;
+    line-height: 30px;
+}
+mark{
+    color: pink;
+    background-color: aquamarine;
+}
+h2{
+    font-size: 20px;
+    color: blueviolet;
+}

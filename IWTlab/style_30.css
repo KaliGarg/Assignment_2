@@ -1,0 +1,17 @@
+body{
+    background-color: plum;
+}
+div{
+    align: center;
+}
+div div h1{
+    color: purple;
+    font-size: 40px;
+    font-weight: bolder;
+}
+div div p{
+    color: blueviolet;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: oblique;
+}

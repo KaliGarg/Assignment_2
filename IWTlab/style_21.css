@@ -1,0 +1,105 @@
+body{
+    background-color: white;
+    color: black;
+}
+.outer{
+    position: relative;
+}
+.obox{
+    position: relative;
+    height: 15%;
+    width: 100%;
+}
+.ibox{
+    display: flex;
+    width: 20%;
+    float: left;
+}
+.img1{
+    height: 100%;
+    width: 100%;
+}
+.ibox1{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    float: right;
+}
+table tr td{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.obox1{
+    position: absolute;
+    top: 170px;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.bb{
+    background-color: black;
+    width: 100%;
+}
+.bb tr td{
+    position: relative;
+}
+table tr td nav ul{
+    position: absolute;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+table tr td nav:hover ul{
+    display: block;
+}
+table tr td nav ul li{
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+table tr td nav ul li:hover{
+    background-color: powderblue;
+}
+a{
+    text-decoration: none;
+    border: 2px black;
+}
+.img2{
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+.obox5{
+    height: 70%;
+    width: 100%;
+}
+.ibox5{
+    vertical-align: middle;
+    position: absolute;
+    float: right;
+    top: 200px;
+    left:50%;
+    height:73%;
+    width:50%;
+    z-index: 150;
+    background-color:rgba(0, 0, 0, 0.6);
+    color: white;
+}
+.ibox5 h2{
+    margin-top: 200px;
+    text-align: center;
+}
+.ibox5 p{
+    text-align: center;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}

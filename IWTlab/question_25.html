@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            body{
+                background-image: url("image/21.jpg");
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            td{
+                text-align: center;
+                padding: 20px;
+            }
+            label{
+                color: black;
+                font-weight: bolder;
+                font-size: large;
+                font-size: 20px;
+            }
+            caption{
+                color: black;
+                font-size: large;
+                font-weight: bolder;
+                font-size: 25px;
+            }
+            .sub{
+                background-color: cadetblue;
+                font-size: large;
+                border-radius: 20px;
+                margin: 5px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>REGISTRATION FORM</caption>
+            <form>
+            <tr>
+                <td><label>First Name : </label></td>
+                <td><input type="text" name="first" placeholder="Enter first name" required></td>
+            </tr>
+            <tr>
+                <td><label>Last Name : </label></td>
+                <td><input type="text" name="last" placeholder="Enter last name"></td>
+            </tr>
+            <tr>
+                <td><label>User ID: </label></td>
+                <td><input type="text" name="userID" placeholder="Enter User ID" required></td>
+            </tr>
+            <tr>
+                <td><label>Password: </label></td>
+                <td><input type="password" name="pass" placeholder="Enter Password" required></td>
+            </tr>
+            <tr>
+                <td><label>Confirm Password: </label></td>
+                <td><input type="password" name="cpass" placeholder="Confirm Password" required></td>
+            </tr>
+            <tr>
+                <td><label>Address: </label></td>
+                <td><input type="text" name="add" placeholder="Enter your address" required></td>
+            </tr>
+            <tr>
+                <td><label>Email: </label></td>
+                <td><input type="text" name="email" placeholder="Enter your Email address" required></td>
+            </tr>
+            <tr>
+                <td><label>Contact Number: </label></td>
+                <td><input type="text" name="number" placeholder="Enter your Number" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" onclick=validate()></td>
+            </tr>
+            </form>
+        </table>
+        <script>
+            function validate()
+            {
+                Fname=document.forms[0].elements[0].value;
+                FnamePattern=/^[a-zA-Z]{2,30}$/;
+
+                Lname=document.forms[0].elements[1].value;
+                LnamePattern=/^[a-zA-Z]{0,}$/;
+                
+                userid=document.forms[0].elements[2].value;
+                useridPattern=/^[a-zA-Z]{5}[0-9]{5}$/;
+                
+                password=document.forms[0].elements[3].value;
+                passwordPattern=/^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+                
+                cpassword=document.forms[0].elements[4].value;
+                
+                address=document.forms[0].elements[5].value;
+                addressPattern=/^[a-z A-Z 0-9]{1,250}$/;
+                
+                email=document.forms[0].elements[6].value;
+                emailpattern=/^\w+@[a-zA-Z]+?\.[a-zA-Z]{2,3}$/;
+
+                number=document.forms[0].elements[7].value;
+                numberpattern=/^[6-9][0-9]{9}$/;
+                
+                if(!(FnamePattern.test(Fname)))
+                {
+                    alert("Enter valid first name");
+                    return false;
+                }
+                else if(!(LnamePattern.test(Lname)))
+                {
+                    alert("Enter valid Last name");
+                    return false;
+                }
+                else if(!(useridPattern.test(userid)))
+                {
+                    alert("Enter valid User ID");
+                    return false;
+                }
+                else if(!(passwordPattern.test(password)))
+                {
+                    alert("Enter valid password");
+                    return false;
+                }
+                else if(!(cpassword===password))
+                {
+                    alert("Entered password is not matched");
+                    return false;
+                }
+                else if(!(addressPattern.test(address)))
+                {
+                    alert("Enter valid address");
+                    return false;
+                }
+                else if(!(emailPattern.test(email)))
+                {
+                    alert("Enter valid Email address");
+                    return false;
+                }
+                else if(!(numberpattern.test(number)))
+                {
+                    alert("Enter valid number");
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>

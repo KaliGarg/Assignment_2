@@ -1,0 +1,20 @@
+p{
+    text-align: justify;
+    font-size: 20px;
+    text-indent: 80px;
+    color: darkmagenta;
+}
+div{
+    border-color: aquamarine;
+    border-style:groove;
+    border-width: 10px;
+    padding: 20px 50px 10px 60px;
+    margin: 30px 60px 20px 70px;
+    border-radius: 30px;
+    float: right;
+    width: 20%;
+    background-color:cyan;
+}
+h1{
+    font-weight: bolder;
+}

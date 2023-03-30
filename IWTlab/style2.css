@@ -1,0 +1,35 @@
+h1{
+    color: cadetblue;
+    text-decoration: underline wavy;
+    font-size: 50px;
+}
+p{
+    text-align: center;
+    font-size: 35px;
+    text-indent: 80px;
+    color: black;
+    z-index: 5;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+div{
+    align-items: center;
+    border: solid;
+    border-color: darkcyan;
+    border-style: double;
+    border-width: 16px;
+    height: 450px;
+    width: 300px;
+    position: relative;
+    float:left;
+    margin:20px;
+    vertical-align: middle;
+}
+img{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -6;
+    height: 100%;
+    width: 100%;
+}

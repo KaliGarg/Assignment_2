@@ -1,0 +1,46 @@
+.division{
+    border: 5px solid palevioletred;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    background-color: rgb(58, 172, 176);
+    justify-content: space-evenly;
+    align-items: center;
+}
+.division > div{
+    border: 2px double maroon;
+    height: 100px;
+    width: 100px;
+    background-color: mediumaquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transform: rotate(45deg) scale(2);
+    box-shadow: 10px 10px 10px gray;
+    animation-name: anime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.division > div >p{
+    transform: rotate(-45deg);
+}
+@keyframes anime{
+    25%{
+        left:100px;
+        top: 0;
+    }
+    50%{
+        left:100px;
+        top: 100px;
+    }
+    75%{
+        left: 0;
+        top: 100px;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}

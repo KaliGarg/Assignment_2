@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QUESTION 26</title>
+    </head>
+    <body>
+        <button onclick="x=setInterval(start,1000)">START</button>
+        <button onclick="x=reset()">STOP</button>
+        <div id="counter"></div>
+        <script type="text/javascript">
+            count=0;
+            function start()
+            {
+                block=document.getElementById('counter');
+                block.innerHTML=count;
+                count++;
+            }
+            function reset()
+            {
+                block=document.getElementById('counter');
+                block.innerHTML=count;
+                count=0;
+            }
+        </script>
+    </body>
+</html>

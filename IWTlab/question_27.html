@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QUESTION 27</title>
+    </head>
+    <body>
+        <div id="clock">
+            <script type="text/javascript">
+                function clock()
+                {
+                    d=new Date();
+                    hh=d.getHours();
+                    mm=d.getMinutes();
+                    ss=d.getSeconds();
+                    ctime=hh+" : "+mm+" : "+ss;
+                    block=document.getElementById('clock');
+                    block.innerHTML=ctime;
+                }
+                setInterval(clock,1000);
+            </script>
+        </div>
+    </body>
+</html>

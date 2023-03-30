@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Temprature Conversion</title>
+        <style>
+            body{
+                align-items:center ;
+                background-color: plum;
+            }
+        </style>
+    </head>
+    <body >
+        <form method="get">
+            <input type="number" name="Input" onchange="temp()">
+            <select name="inputoption" onchange="temp()">
+                <option value="c">Celsius</option>
+                <option value="f">Fahrenheit</option>
+                <option value="k">Kelvin</option>
+            </select>
+            <br>
+            <br>
+            <input type="text">
+            <select name="outputoption" id="s1" onchange="temp()">
+                <option value="c">Celsius</option>
+                <option value="f">Fahrenheit</option>
+                <option value="k">Kelvin</option>
+            </select>
+        </form>
+        <br>
+        
+        <script>
+            function temp()
+            {
+                i=parseFloat(document.forms[0].elements[0].value);
+                io=document.forms[0].elements[1].value;
+                oo=document.forms[0].elements[3].value;
+
+                if(io== 'c' && oo=='k')
+                {
+                    result = i+273;
+                }
+                else if(io=='c' && oo=='f')
+                {
+                    result=((9/5)*i)+32;
+                }
+                else if(io=='f' && oo=='k')
+                {
+                    result=((i-32)/(5/9))+273;
+                }
+                else if(io=='f' && oo=='c')
+                {
+                    result=(i-32)/(5/9);
+                }
+                else if(io=='k' && oo=='f')
+                {
+                    result=((i-273)*(9/5))+32;
+                }
+                else if(io=='k' && oo=='c')
+                {
+                    result=i-273;
+                }
+                else
+                {
+                    result=i;
+                }
+                document.forms[0].elements[2].value=result;
+            }
+        </script>
+    </body>
+</html>
